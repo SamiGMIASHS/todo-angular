@@ -5,7 +5,7 @@ Important : J'ai dû recréer un nouveau repository, je rencontrais des problèm
 ## Installation et lancement du projet
 - Run `git clone https://github.com/SamiGMIASHS/todo-angular.git`
 - Run `npm install` à l'interieur du dossier todo-angular
-- Run `npm start` ou `npm start`  for a dev server. Navigate to `http://localhost:4200/`. 
+- Run `ng serve` ou `npm start`  for a dev server. Navigate to `http://localhost:4200/`. 
 
 ## Objectifs
 
@@ -15,4 +15,4 @@ La TodoList fonctionne parfaitement, avec les filtres (Exactement comme sur cett
 
 - Sérialisation / désérialisation des données localement (Local Storage) - Pour sauvegarder les données localement (source : https://www.youtube.com/watch?v=CqiGWbMgIRc&t=88s&ab_channel=BriceAyres)
 - Effacer Tout
-- Copie de listes par QR-code : Via le plugin QRCodeModule et la balise html <qrcode> (aucune difficulté, j'ai suivi ce tuto https://drissas.com/ionic-qr-code/)
+- Copie de listes par QR-code : Via le plugin QRCodeModule (aucune difficulté, j'ai suivi ce tuto https://drissas.com/ionic-qr-code/)
