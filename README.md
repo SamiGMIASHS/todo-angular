@@ -3,9 +3,9 @@
 Important : J'ai dû recréer un nouveau repository, je rencontrais des problèmes sur l'ancien quand je faisais git push.
 
 ## Installation et lancement du projet
-Run `git clone`
-Run `npm install`
-Run `npm start` ou `npm start`  for a dev server. Navigate to `http://localhost:4200/`. 
+- Run `git clone https://github.com/SamiGMIASHS/todo-angular.git`
+- Run `npm install` à l'interieur du dossier todo-angular
+- Run `npm start` ou `npm start`  for a dev server. Navigate to `http://localhost:4200/`. 
 
 ## Objectifs
 
