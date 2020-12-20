@@ -13,6 +13,11 @@ La TodoList fonctionne parfaitement, avec les filtres (Exactement comme sur cett
 
 ## Fonctionnalités supplémentaires réalisées
 
-- Sérialisation / désérialisation des données localement (Local Storage) - Pour sauvegarder les données localement (source : https://www.youtube.com/watch?v=CqiGWbMgIRc&t=88s&ab_channel=BriceAyres)
+- Sérialisation / désérialisation des données localement (Local Storage) - Pour sauvegarder les données localement (tutoriel utilisé : https://www.youtube.com/watch?v=CqiGWbMgIRc&t=88s&ab_channel=BriceAyres)
 - Effacer Tout
-- Copie de listes par QR-code : Via le plugin QRCodeModule (aucune difficulté, j'ai suivi ce tuto https://drissas.com/ionic-qr-code/)
+- Copie de listes par QR-code : Via le plugin QRCodeModule (tutoriel utilisé : https://drissas.com/ionic-qr-code/)
+
+
+## Problèmes renconctrés
+
+Aucun problème rencontré pour implémenter ces 3 fonctionnalités.
