@@ -18,6 +18,6 @@ La TodoList fonctionne parfaitement, avec les filtres (Exactement comme sur cett
 - Copie de listes par QR-code : Via le plugin QRCodeModule (tutoriel utilisé : https://drissas.com/ionic-qr-code/)
 
 
-## Problèmes renconctrés
+## Problèmes rencontrés
 
 Aucun problème rencontré pour implémenter ces 3 fonctionnalités.
