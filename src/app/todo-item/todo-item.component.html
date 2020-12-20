@@ -1,0 +1,25 @@
+<li>
+<div *ngIf="edit == false;else editing" class="view">
+  <input 	class			= "toggle"
+          type			= "checkbox"
+          name			= "fait"
+        [ngModel]="itemData.isDone" 
+        (ngModelChange) = "itemDone($event)"
+  />
+  <!--<label 	class="texte" (dblclick)="itemEdit()">{{itemData.label}}</label>-->
+  <label *ngIf="itemData.isDone == true" class="taskDone" (dblclick)="itemEdit()">{{ itemData.label }}</label>
+  <label *ngIf="itemData.isDone == false" class="taskNotDone" (dblclick)="itemEdit()">{{ itemData.label }}</label>
+  <button  class="destroy" (click)="itemDelete()"></button>
+</div>
+</li>
+<ng-template #editing>
+  <div class="view">
+  <form  (submit)="itemLabel(newTextInput.value)">
+    <input  #newTextInput
+            name    = "newTextInput"
+            class   = "edit"
+            type    = "text"
+            [ngModel] = "itemData.label"/>
+  </form>
+</div>
+</ng-template>

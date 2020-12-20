@@ -1,0 +1,59 @@
+<section class="todoapp">
+  <header class="header">
+    <h1>{{label}}</h1>
+    <form (submit)="appendItem(newTodoInput.value); newTodoInput.value=''">
+      <input  #newTodoInput
+              name        = "newTodoInput"
+              class       = "new-todo"
+              placeholder = "Que faire?"
+              autofocus />
+    </form>
+  </header>
+  
+  <section class="main">
+    <input *ngIf="items.length>0" class="toggle-all"
+            type="checkbox" (click)="toggleAll()"
+            name="toggleAll"/>
+    <ul class="todo-list">
+      <app-todo-item *ngFor="let item of filterItems()" [todoItem]="item" >
+      </app-todo-item>
+    </ul>
+  </section>
+
+  
+
+  <div class="footer">
+    <b> {{itemsActive.length}} items left</b>
+    <ul class="filters">
+      <li>
+        <a [ngClass]="{selected: filter==='all'}" (click)="filter='all'">All</a>
+      </li>
+      <li>
+        <a [ngClass]="{selected: filter==='active'}" (click)="filter='active'">Active</a>
+      </li>
+      <li>
+        <a [ngClass]="{selected: filter==='completed'}" (click)="filter='completed'">Completed</a>
+      </li>
+    </ul>
+    <ul class="filters">
+      <li>
+        <a class="clear-completed" *ngIf="itemsOk.length>0" (click)="allDelete(itemsOk)">Clear Completed</a>
+      </li>
+      <li>
+        <a *ngIf="items.length>1" (click)="allDelete(items)">Remove All</a>
+      </li>
+      <li>
+        <a *ngIf="items.length>0" (click)="todoService.showQrcode()">Show QR Code</a>
+      </li>
+      <li>
+        <a *ngIf="items.length>0" (click)="todoService.hideQrcode()">Hide QR Code</a>
+      </li>
+    </ul>
+  </div>
+  <div class="QRCode" *ngIf="todoService.myAngularxQrCode">
+    <qrcode [qrdata]="todoService.myAngularxQrCode" [width]="250" [errorCorrectionLevel]="'M'"></qrcode>
+  </div>
+
+</section>
+
+
